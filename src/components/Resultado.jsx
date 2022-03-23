@@ -7,7 +7,7 @@ const Resultado = () => {
   const { marca, plan, year } = datos;
   const yearRef = useRef(year);
 
-  //   const [nombreMarca] = MARCAS.filter((m) => m.id === Number(marca));
+  const [nombreMarca] = MARCAS.filter((m) => m.id === Number(marca));
   const [nombrePlan] = PLANES.filter((p) => p.id === Number(plan));
 
   return (
